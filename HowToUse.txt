@@ -1,0 +1,20 @@
+!!! Mysql Database login class !!!
+
+Import this class to your c# project.
+Import all the necessary references.
+
+Copy the code below and paste in the function where you want to execute the loginscript.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+const string username = "Mike"; //Get from form
+const string password = "Pas"; //Get from form
+
+if (_database.Login("YourServer", "YourUsername", "YourPassword", "YourDatabaseName", "SELECT * FROM yourtable WHERE BINARY yourusernamecolumn='" + username + "' AND BINARY yourpasswordcolumn='" + password + "'"))
+{
+	//Execute code if logged in
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Author: Mike Pas
