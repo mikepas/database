@@ -7,8 +7,8 @@ Copy the code below and paste in the function where you want to execute the logi
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-const string username = "Mike"; //Get from form
-const string password = "Pas"; //Get from form
+const string username = YourInput; //Get from form
+const string password = YourInput; //Get from form
 
 if (_database.Login("YourServer", "YourUsername", "YourPassword", "YourDatabaseName", "SELECT * FROM yourtable WHERE BINARY yourusernamecolumn='" + username + "' AND BINARY yourpasswordcolumn='" + password + "'"))
 {
