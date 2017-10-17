@@ -26,17 +26,17 @@ namespace DatabaseClass
             }
             catch
             {
-                MessageBox.Show(@"Could not connect to the database");
+                MessageBox.Show(@"Could not connect to the database!");
                 return false;
             }
 
             if (!result)
             {
-                MessageBox.Show(@"Incorrect username or password");
+                MessageBox.Show(@"Incorrect username or password!");
                 return false;
             }
 
-            MessageBox.Show(@"You are logged in");
+            MessageBox.Show(@"You are logged in!");
             return true;
         }
     }
